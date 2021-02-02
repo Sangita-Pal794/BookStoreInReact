@@ -1,0 +1,21 @@
+.MuiDialog-container {
+  .titleBar {
+    background-color: #a03037;
+  }
+  .MuiTypography-root {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #addBookForm {
+    display: flex !important ;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+  }
+  .MuiFormControl-root {
+    margin: 10px;
+  }
+  #logo {
+    padding-right: 10px;
+  }
+}
