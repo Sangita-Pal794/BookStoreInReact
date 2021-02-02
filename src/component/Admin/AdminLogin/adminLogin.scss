@@ -1,0 +1,42 @@
+@import "../../breakPoints";
+
+.main-container.log-in {
+  display: flex;
+  margin: 0 auto !important;
+  margin-top: 100px !important; 
+  width: 24% !important;
+  padding: 40px 40px !important;
+  height: 100%;
+  padding: 15px;
+  @media screen and (max-width: $break-large) {
+    margin-top: 100px !important;
+  }
+  @media screen and (max-width: $break-medium) {
+    width: 40% !important;
+  }
+  @media screen and (max-width: $break-small) {
+    width: 60% !important;
+  }
+}
+
+.heading.log-in {
+  margin: 0 auto;
+}
+
+.sub-heading {
+  text-align: center;
+}
+
+.button-text {
+  text-transform: none !important;
+}
+
+.crate-account-button {
+  float: left;
+  text-transform: none !important;
+}
+
+.login-button {
+  text-transform: none !important;
+  float: right;
+}
