@@ -1,0 +1,114 @@
+.addBookBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6%;
+  .heading {
+    height: 5px;
+    margin-top: 0% !important;
+    margin-left: 13% !important;
+  }
+  #addBook {
+    background-color: #a03037;
+    height: 30px;
+    margin-right: 2% ;
+    color: white !important;
+  }
+}
+
+.body-content {
+  .displayCard {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .MuiCard-root {
+    width: 200px;
+    margin: 20px;
+  }
+  h4 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  p {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 15px;
+  }
+  .MuiButtonBase-root {
+    background-color: #a03037;
+    margin: 20px;
+  }
+  .MuiButtonBase-root:hover {
+    background-color: #a03037;
+  }
+//   #addBook {
+//     color: white;
+//     margin: 20px 0 !important;
+//   }
+  .MuiPaper-root {
+    height: auto;
+  }
+  #imgdescription {
+    height: 120px;
+    width: 90px;
+    display: block;
+    margin: auto;
+  }
+  #imageContain {
+    background-color: #f5f5f5;
+    height: 170px;
+    display: flex;
+  }
+  .MuiPaper-rounded {
+    border-radius: 2px;
+  }
+  #imageCard {
+    padding: 0;
+  }
+  #detailsCard {
+    padding-bottom: none;
+    padding: 10px !important;
+  }
+  #author {
+    font-size: 11px;
+    color: grey;
+  }
+  #price {
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 7px;
+  }
+  .btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #update,
+  #delete {
+    height: 25px;
+    border-radius: 1px;
+    box-shadow: none;
+  }
+  #update {
+    color: white !important;
+  }
+  .MuiButton-label {
+    font-size: 10px;
+  }
+  #delete {
+    background-color: white !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .addBookBtn {
+    margin: 40px !important;
+  }
+  #addBook {
+    margin: 20px 0 !important;
+  }
+  .MuiPaper-root,
+  .MuiCard-root {
+    width: 100% !important;
+  }
+}
