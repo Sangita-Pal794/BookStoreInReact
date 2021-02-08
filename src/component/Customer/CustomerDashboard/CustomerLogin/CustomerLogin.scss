@@ -1,0 +1,189 @@
+@import "../../colors";
+@import "../../breakPoints";
+
+.signUp-logIn-container {
+  display: flex;
+  align-items: center;
+
+  .shopping-image {
+    background-color: lightgray;
+    height: 300px;
+    padding: 52px;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $break-medium) {
+      height: 250px;
+      padding: 30px;
+    }
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+    .shop-image {
+      height: 245px;
+      width: 245px;
+      border-radius: 50%;
+      padding: 0 0 30px 0;
+      @media screen and (max-width: $break-medium) {
+        height: 190px;
+        width: 190px;
+      }
+    }
+    .image-title {
+      @media screen and (max-width: $break-medium) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .signUp-logIn-from {
+    width: 300px;
+    height: 480px;
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.85);
+
+    .toggle-signUp-logIn {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .logIn-select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logIn-h6 {
+          color: $color-gray;
+        }
+        .logIn-h6.active {
+          color: $color-appBar-background;
+        }
+        .select {
+          height: 3px;
+          width: 30px;
+        }
+        .select.active {
+          background-color: $color-appBar-background;
+          border-radius: 2px;
+        }
+      }
+
+      .signUp-select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .signUp-h6 {
+          color: $color-gray;
+        }
+        .signUp-h6.active {
+          color: $color-appBar-background;
+        }
+        .select {
+          height: 3px;
+          width: 30px;
+        }
+        .select.active {
+          background-color: $color-appBar-background;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .from {
+      margin-top: 10px;
+
+      .logIn-from {
+        .logIn-email-Field,
+        .logIn-password-Field {
+          // border: 1px solid lightgray;
+        }
+        .forget-pass {
+          span {
+            float: right;
+            color: $color-gray;
+
+            &:hover {
+              color: $color-blue;
+            }
+          }
+        }
+
+        .logIn-button {
+          margin: 20px 0 10px;
+          color: $color-white;
+          background-color: $color-appBar-background;
+        }
+
+        .more-option-login-divider {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 20px 0;
+          .spacing {
+            width: 25%;
+            height: 1px;
+            background-color: $color-black;
+            opacity: 0.4;
+          }
+        }
+
+        .more-option-login-buttons {
+          margin: 30px 0 20px;
+          .login-with-facebook {
+            width: 48%;
+            margin-right: 1%;
+            background-color: $color-blue;
+            color: $color-white;
+          }
+          .login-with-google {
+            width: 48%;
+            margin-left: 1%;
+            background-color: $color-lightgray;
+          }
+        }
+      }
+
+      .signUp-from {
+        .signUp-name-Field {
+          margin-top: 0;
+          border: 1px solid lightgray;
+        }
+        .signUp-email-Field {
+          margin-top: 0;
+          border: 1px solid lightgray;
+        }
+        .signUp-password-Field {
+          margin-top: 0;
+          border: 1px solid lightgray;
+        }
+        .signUp-mobile-number-Field {
+          margin-top: 0;
+          border: 1px solid lightgray;
+        }
+        .signUp-button {
+          margin: 10px 0 0;
+          color: $color-white;
+          background-color: $color-appBar-background;
+        }
+      }
+    }
+  }
+}
+
+.toggle-signUp-logIn h6 {
+  font-weight: bold;
+}
+
+.MuiDialog-paper.MuiPaper-elevation24 {
+  box-shadow: none;
+}
+
+.MuiPaper-root.MuiDialog-paper {
+  background-color: transparent;
+}
+.MuiDialog-paperWidthSm {
+  max-width: 800px !important;
+}
