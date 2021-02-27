@@ -1,0 +1,14 @@
+@import "../../colors";
+@import "../../breakPoints";
+
+.footer{
+    height: 50px;
+    background-color: $color-footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-text{
+        color: $color-white;
+        text-align: center;
+    }
+  }
