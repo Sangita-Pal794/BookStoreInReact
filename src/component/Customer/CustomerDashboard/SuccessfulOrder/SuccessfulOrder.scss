@@ -1,0 +1,73 @@
+@import "../../colors";
+@import "../../breakPoints";
+
+.success-order-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .body {
+    min-height: calc(100vh - 130px);
+    padding: 10px;
+    .body-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .order-successful-image {
+        margin: 0 0 10px;
+        width: 35%;
+        height: 300px;
+        @media screen and (max-width: $break-xsmall) {
+          width: 90%;
+        }
+      }
+      .successful-text {
+        text-align: center;
+        color: $color-gray;
+      }
+      .contact-details {
+        margin: 15px 0 0;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: $break-xsmall) {
+          width: 90%;
+        }
+        .contact-details-header {
+          display: flex;
+          border: 1px solid $color-lightgray;
+          background-color: $color-lightgray;
+          .email {
+            width: 33%;
+            text-align: center;
+          }
+          .contact {
+            width: 33%;
+            text-align: center;
+          }
+          .address {
+            width: 33%;
+            text-align: center;
+          }
+        }
+        .contact-details-body {
+          display: flex;
+          .email {
+            width: 33%;
+            text-align: center;
+            border: 1px solid $color-lightgray;
+          }
+          .contact {
+            width: 33%;
+            text-align: center;
+            border: 1px solid $color-lightgray;
+          }
+          .address {
+            width: 33%;
+            text-align: center;
+            border: 1px solid $color-lightgray;
+          }
+        }
+      }
+    }
+  }
+}
